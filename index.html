@@ -5,10 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
-    <title>Jasa Saluran Mampet & Deteksi Pipa Bocor Terdekat | Ciledug Promo</title>
-    <meta name="description" content="Ahli pelancaran saluran mampet (WC, Wastafel) & deteksi pipa bocor dalam dinding tanpa bongkar keramik. Bergaransi & Cepat.">
-    <meta name="keywords" content="Jasa saluran mampet, deteksi pipa bocor, jasa pipa mampet terdekat, Ciledug Promo">
+    <title>Jasa Saluran Mampet & Deteksi Pipa Bocor (Tanpa Bongkar) | Ciledug Promo</title>
+    
+    <meta name="description" content="JANGAN BONGKAR KERAMIK! Jasa saluran mampet & deteksi pipa bocor teknologi sensor komputer. Solusi WC buntu & tagihan air bengkak. Garansi Lancar.">
+    
+    <meta name="keywords" content="Jasa saluran mampet, deteksi pipa bocor, jasa pipa mampet terdekat, tukang ledeng ciledug, deteksi kebocoran pipa air dalam tanah, jasa roto rooter tangerang, endoscope camera, Ciledug Promo">
+    
+    <meta name="google-site-verification" content="PASTE_KODE_VERIFIKASI_GSC_ANDA_DISINI" />
+    
     <meta name="robots" content="index, follow">
+    <meta name="author" content="Ciledug Promo">
+    <meta name="language" content="id">
+    <meta name="geo.region" content="ID-BT" />
+    <meta name="geo.placename" content="Tangerang" />
+    <meta name="geo.position" content="-6.229728;106.716616" />
+    <meta name="ICBM" content="-6.229728, 106.716616" />
+    <link rel="canonical" href="https://jasa-saluran-mampet.vercel.app/" />
+    
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ahli Pipa Mampet & Bocor - Teknologi Sensor Tanpa Bongkar">
+    <meta property="og:description" content="Solusi pipa mampet & bocor tanpa merusak lantai. Hemat biaya & bergaransi.">
+    <meta property="og:image" content="https://plus.unsplash.com/premium_photo-1664301972519-506636f0245d?q=80&w=1200">
+    <meta property="og:url" content="https://jasa-saluran-mampet.vercel.app/">
+    <meta property="og:site_name" content="Ciledug Promo">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Plumber",
+      "name": "Jasa Saluran Mampet & Deteksi Bocor - Ciledug Promo",
+      "image": "https://plus.unsplash.com/premium_photo-1664301972519-506636f0245d?q=80&w=1200",
+      "description": "Spesialis deteksi pipa bocor dan pelancaran saluran mampet menggunakan teknologi sensor akustik dan kamera endoscope tanpa bongkar.",
+      "telephone": "+6285283212205",
+      "url": "https://jasa-saluran-mampet.vercel.app/",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Tangerang",
+        "addressRegion": "Banten",
+        "addressCountry": "ID"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -6.229728,
+        "longitude": 106.716616
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "priceRange": "$$"
+    }
+    </script>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=Rajdhani:wght@500;700;900&display=swap" rel="stylesheet">
@@ -19,40 +69,41 @@
         :root {
             --toxic-green: #39ff14;
             --dark-metal: #0a0a0a; 
+            --glass-panel: rgba(20, 20, 20, 0.9);
         }
         
         body { 
             font-family: 'Rajdhani', sans-serif; 
             background-color: var(--dark-metal); 
             color: #e2e8f0; 
-            overflow-x: hidden; /* Mencegah geser samping di HP */
+            overflow-x: hidden;
             width: 100%;
         }
 
-        h1, h2, h3, .brand-font { font-family: 'Chakra Petch', sans-serif; text-transform: uppercase; }
+        h1, h2, h3, .brand-font { font-family: 'Chakra Petch', sans-serif; text-transform: uppercase; letter-spacing: 0.5px; }
 
         /* HERO BG FIXED */
         .hero-bg {
-            background: linear-gradient(to bottom, rgba(0,0,0,0.8), #0a0a0a), 
-                        url('https://plus.unsplash.com/premium_photo-1663054286211-e13d4147fffc?q=80&w=800'); /* Gambar Pipa Industrial */
+            background: linear-gradient(to bottom, rgba(0,0,0,0.7), #0a0a0a), 
+                        url('https://plus.unsplash.com/premium_photo-1663054286211-e13d4147fffc?q=80&w=1080');
             background-size: cover;
             background-position: center;
+            background-attachment: fixed;
         }
 
         /* CARD STYLE & IMAGE FIX */
         .bento-card {
-            background: rgba(20, 20, 20, 0.8);
+            background: var(--glass-panel);
             border: 1px solid #333;
             border-radius: 12px;
             overflow: hidden;
             transition: all 0.4s ease;
         }
         
-        /* Container Gambar Fixed Aspect Ratio (Agar tidak gepeng/hilang) */
         .card-img-container {
             width: 100%;
             height: 220px;
-            background-color: #1a1a1a; /* Warna cadangan jika loading */
+            background-color: #1a1a1a;
             position: relative;
             overflow: hidden;
         }
@@ -61,86 +112,92 @@
             width: 100%; 
             height: 100%; 
             object-fit: cover; 
-            filter: grayscale(20%); 
+            filter: grayscale(10%); 
             transition: 0.5s; 
         }
         .bento-card:hover .card-img { filter: grayscale(0%); transform: scale(1.1); }
+        .bento-card:hover { border-color: var(--toxic-green); transform: translateY(-5px); box-shadow: 0 5px 20px rgba(57, 255, 20, 0.1); }
 
         /* BUTTON AURA */
         .btn-aura {
             position: relative;
-            background: rgba(57, 255, 20, 0.1);
+            background: rgba(57, 255, 20, 0.05);
             color: var(--toxic-green);
             font-weight: 800;
             border: 2px solid var(--toxic-green);
             text-transform: uppercase;
             overflow: hidden;
             transition: all 0.3s;
-            box-shadow: 0 0 15px rgba(57, 255, 20, 0.2);
+            box-shadow: 0 0 10px rgba(57, 255, 20, 0.1);
+            z-index: 10;
         }
         .btn-aura:hover {
             background: var(--toxic-green);
             color: black;
-            box-shadow: 0 0 30px rgba(57, 255, 20, 0.6);
+            box-shadow: 0 0 30px rgba(57, 255, 20, 0.5);
+            transform: scale(1.02);
         }
         .btn-aura::before {
             content: ""; position: absolute; top: 0; left: -100%; width: 100%; height: 100%;
             background: linear-gradient(90deg, transparent, rgba(255,255,255,0.8), transparent);
-            transform: skewX(-25deg); animation: shine 2s infinite;
+            transform: skewX(-25deg); animation: shine 2.5s infinite;
         }
         @keyframes shine { 0% { left: -100%; } 20% { left: 200%; } 100% { left: 200%; } }
 
         /* FAQ STYLING */
-        details > summary { list-style: none; cursor: pointer; padding: 15px; background: #111; border: 1px solid #333; }
+        details > summary { list-style: none; cursor: pointer; padding: 15px; background: #111; border: 1px solid #333; transition: 0.3s; }
         details[open] > summary { background: var(--toxic-green); color: black; font-weight: bold; }
-        details > div { padding: 15px; border: 1px solid #333; border-top: none; background: #0f0f0f; font-size: 0.9rem; }
+        details > div { padding: 15px; border: 1px solid #333; border-top: none; background: #0f0f0f; font-size: 0.9rem; line-height: 1.6; }
+
+        /* MAP DARK MODE */
+        .map-dark { filter: invert(90%) hue-rotate(180deg) contrast(1.2); }
     </style>
 </head>
 <body class="pb-24 md:pb-0">
 
-    <nav class="fixed top-0 w-full z-50 bg-black/90 backdrop-blur-md border-b border-white/10">
+    <nav class="fixed top-0 w-full z-50 bg-black/95 backdrop-blur-md border-b border-white/10">
         <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
             <div class="flex items-center gap-3">
                 <i class="fa-solid fa-radiation text-2xl md:text-3xl text-[var(--toxic-green)] animate-pulse"></i>
                 <div class="leading-none">
                     <h1 class="text-xl md:text-2xl font-black text-white brand-font tracking-widest">PIPA<span class="text-[var(--toxic-green)]">PRO</span></h1>
-                    <p class="text-[9px] text-gray-400 uppercase tracking-[0.2em] font-bold">Teknologi Sensor</p>
+                    <p class="text-[9px] text-gray-400 uppercase tracking-[0.2em] font-bold">Smart Sensor Tech</p>
                 </div>
             </div>
-            <a href="https://wa.me/6285283212205" class="hidden md:flex btn-aura px-6 py-2 rounded text-xs items-center gap-2">
+            <a href="https://wa.me/6285283212205?text=Halo%20Admin,%20saya%20butuh%20bantuan%20darurat!" class="hidden md:flex btn-aura px-6 py-2 rounded text-xs items-center gap-2">
                 <i class="fa-brands fa-whatsapp text-lg"></i> RESPON 24 JAM
             </a>
         </div>
     </nav>
 
-    <header class="hero-bg min-h-[90vh] flex items-center justify-center text-center px-4 relative pt-16">
+    <header class="hero-bg min-h-[90vh] flex items-center justify-center text-center px-4 relative pt-20">
         <div class="relative z-10 w-full max-w-4xl mx-auto" data-aos="zoom-in">
             
-            <div class="inline-block py-2 px-4 bg-red-600 text-white text-[10px] md:text-sm font-black tracking-widest mb-6 border-2 border-red-500 shadow-[0_0_20px_rgba(220,38,38,0.5)]">
-                <i class="fa-solid fa-hand"></i> JANGAN BONGKAR KERAMIK!
+            <div class="inline-block py-2 px-5 bg-red-600 text-white text-[10px] md:text-sm font-black tracking-widest mb-6 border-2 border-red-500 shadow-[0_0_20px_rgba(220,38,38,0.5)] transform -rotate-1">
+                <i class="fa-solid fa-hand-paper"></i> STOP! JANGAN BONGKAR KERAMIK!
             </div>
             
             <h1 class="text-3xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-tight brand-font">
                 SALURAN ANDA <span class="text-[var(--toxic-green)]">MAMPET?</span><br>
-                TAGIHAN AIR <span class="text-red-500">NAIK?</span>
+                TAGIHAN AIR <span class="text-red-500">MEMBENGKAK?</span>
             </h1>
             
-            <p class="text-gray-300 text-sm md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed font-bold border-l-4 border-[var(--toxic-green)] pl-4 bg-black/50 p-3 text-left md:text-center rounded">
-                "Kami gunakan <span class="text-[var(--toxic-green)]">Radar Akustik & Kamera</span> untuk melihat masalah pipa tanpa merusak rumah Anda."
+            <p class="text-gray-300 text-sm md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed font-bold border-l-4 border-[var(--toxic-green)] pl-4 bg-black/60 p-4 text-left md:text-center rounded backdrop-blur-sm">
+                "Kami satu-satunya yang menggunakan <span class="text-[var(--toxic-green)]">Radar Akustik & Kamera Endoscope</span> untuk melihat masalah di dalam pipa tanpa merusak rumah Anda."
             </p>
             
             <div class="flex flex-col md:flex-row gap-4 justify-center">
-                <a href="#layanan" class="px-6 py-3 border border-white/20 bg-white/5 text-white font-bold text-xs md:text-sm tracking-widest hover:border-[var(--toxic-green)] transition uppercase w-full md:w-auto text-center">
-                    Lihat Teknologi
+                <a href="#layanan" class="px-6 py-3 border border-white/20 bg-white/5 text-white font-bold text-xs md:text-sm tracking-widest hover:border-[var(--toxic-green)] transition uppercase w-full md:w-auto text-center rounded">
+                    Lihat Bukti Teknologi
                 </a>
-                <a href="https://wa.me/6285283212205" class="btn-aura px-6 py-3 flex items-center justify-center gap-2 text-xs md:text-sm tracking-widest w-full md:w-auto">
+                <a href="https://wa.me/6285283212205?text=Halo%20Admin,%20bisa%20datang%20sekarang?" class="btn-aura px-6 py-3 flex items-center justify-center gap-2 text-xs md:text-sm tracking-widest w-full md:w-auto rounded">
                     <i class="fa-solid fa-phone-volume"></i> PANGGIL TEKNISI
                 </a>
             </div>
 
             <div class="mt-10 grid grid-cols-3 gap-2 text-gray-500 text-[9px] md:text-xs font-bold uppercase tracking-widest">
-                <div class="border border-gray-700 p-2 rounded bg-black/80"><i class="fa-solid fa-shield text-[var(--toxic-green)] mb-1 text-lg block"></i> Garansi</div>
-                <div class="border border-gray-700 p-2 rounded bg-black/80"><i class="fa-solid fa-bolt text-[var(--toxic-green)] mb-1 text-lg block"></i> 1 Jam Sampai</div>
+                <div class="border border-gray-700 p-2 rounded bg-black/80"><i class="fa-solid fa-shield-halved text-[var(--toxic-green)] mb-1 text-lg block"></i> Garansi</div>
+                <div class="border border-gray-700 p-2 rounded bg-black/80"><i class="fa-solid fa-bolt-lightning text-[var(--toxic-green)] mb-1 text-lg block"></i> 1 Jam Sampai</div>
                 <div class="border border-gray-700 p-2 rounded bg-black/80"><i class="fa-solid fa-wallet text-[var(--toxic-green)] mb-1 text-lg block"></i> Hemat Biaya</div>
             </div>
         </div>
@@ -149,7 +206,7 @@
     <section id="layanan" class="py-20 relative bg-[#050505]">
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-12">
-                <h2 class="text-2xl md:text-4xl font-black text-white brand-font mb-2">SOLUSI <span class="text-[var(--toxic-green)]">TEKNOLOGI</span></h2>
+                <h2 class="text-2xl md:text-4xl font-black text-white brand-font mb-2">SOLUSI <span class="text-[var(--toxic-green)]">TEKNOLOGI TINGGI</span></h2>
                 <p class="text-gray-400 text-xs md:text-sm">Metode kuno bongkar lantai sudah ketinggalan zaman.</p>
             </div>
 
@@ -157,8 +214,8 @@
                 
                 <div class="bento-card group cursor-pointer" onclick="openWA('Saluran Mampet')">
                     <div class="card-img-container">
-                        <img src="https://plus.unsplash.com/premium_photo-1726761625778-1d13ba956d13?q=80&w=800" class="card-img" alt="Tukang Pipa Mampet">
-                        <div class="absolute top-3 right-3 bg-red-600 text-white text-[9px] font-bold px-3 py-1 shadow">BEST SELLER</div>
+                        <img src="https://plus.unsplash.com/premium_photo-1726761625778-1d13ba956d13?q=80&w=600" class="card-img" alt="Jasa WC Mampet Tanpa Bongkar">
+                        <div class="absolute top-3 right-3 bg-red-600 text-white text-[9px] font-bold px-3 py-1 shadow rounded">BEST SELLER</div>
                     </div>
                     <div class="p-5">
                         <h3 class="text-lg md:text-xl font-bold text-white mb-2 group-hover:text-[var(--toxic-green)] transition brand-font">WC & SALURAN MAMPET</h3>
@@ -169,9 +226,9 @@
                     </div>
                 </div>
 
-                <div class="bento-card group cursor-pointer border-[var(--toxic-green)]" onclick="openWA('Deteksi Bocor')">
+                <div class="bento-card group cursor-pointer border-[var(--toxic-green)] shadow-[0_0_15px_rgba(57,255,20,0.1)]" onclick="openWA('Deteksi Bocor')">
                     <div class="card-img-container">
-                        <img src="https://plus.unsplash.com/premium_photo-1664301972519-506636f0245d?q=80&w=800" class="card-img" alt="Alat Deteksi Pipa Bocor">
+                        <img src="https://plus.unsplash.com/premium_photo-1664301972519-506636f0245d?q=80&w=600" class="card-img" alt="Alat Deteksi Pipa Bocor Dalam Dinding">
                     </div>
                     <div class="p-5">
                         <h3 class="text-lg md:text-xl font-bold text-white mb-2 group-hover:text-[var(--toxic-green)] transition brand-font">DETEKSI KEBOCORAN</h3>
@@ -184,7 +241,7 @@
 
                 <div class="bento-card group cursor-pointer" onclick="openWA('Inspeksi Kamera')">
                     <div class="card-img-container">
-                        <img src="https://plus.unsplash.com/premium_photo-1664301132849-f52af765df79?q=80&w=800" class="card-img" alt="Kamera Pipa Endoscope">
+                        <img src="https://plus.unsplash.com/premium_photo-1664301132849-f52af765df79?q=80&w=600" class="card-img" alt="Kamera Endoscope Pipa">
                     </div>
                     <div class="p-5">
                         <h3 class="text-lg md:text-xl font-bold text-white mb-2 group-hover:text-[var(--toxic-green)] transition brand-font">INSPEKSI KAMERA</h3>
@@ -201,21 +258,24 @@
 
     <section class="py-16 bg-[#0a0a0a] border-t border-white/5">
         <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-2xl md:text-3xl font-bold text-white text-center mb-8 brand-font">TESTIMONI <span class="text-[var(--toxic-green)]">PELANGGAN</span></h2>
+            <h2 class="text-2xl md:text-3xl font-bold text-white text-center mb-8 brand-font">KATA MEREKA <span class="text-[var(--toxic-green)]">TENTANG KAMI</span></h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <div class="bg-[#111] p-4 rounded border border-white/10">
-                    <div class="flex text-yellow-500 text-xs mb-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                    <p class="text-gray-400 text-xs italic mb-2">"Alatnya canggih, gak perlu bongkar keramik kamar mandi. WC langsung lancar."</p>
+                <div class="bg-[#111] p-5 rounded border border-white/10 relative">
+                    <i class="fa-solid fa-quote-right absolute top-4 right-4 text-gray-800 text-2xl"></i>
+                    <div class="flex text-yellow-500 text-xs mb-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-gray-400 text-sm italic mb-3">"Alatnya canggih, gak perlu bongkar keramik kamar mandi. WC langsung lancar."</p>
                     <div class="text-white text-xs font-bold">- Bpk. Hendra, Ciledug</div>
                 </div>
-                <div class="bg-[#111] p-4 rounded border border-white/10">
-                    <div class="flex text-yellow-500 text-xs mb-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                    <p class="text-gray-400 text-xs italic mb-2">"Tagihan air turun drastis setelah ketemu bocornya di taman. Thanks PipaPro!"</p>
+                <div class="bg-[#111] p-5 rounded border border-white/10 relative">
+                    <i class="fa-solid fa-quote-right absolute top-4 right-4 text-gray-800 text-2xl"></i>
+                    <div class="flex text-yellow-500 text-xs mb-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-gray-400 text-sm italic mb-3">"Tagihan air turun drastis setelah ketemu bocornya di taman. Thanks PipaPro!"</p>
                     <div class="text-white text-xs font-bold">- Ibu Sarah, Bintaro</div>
                 </div>
-                <div class="bg-[#111] p-4 rounded border border-white/10">
-                    <div class="flex text-yellow-500 text-xs mb-2"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                    <p class="text-gray-400 text-xs italic mb-2">"Respon cepat jam 11 malam. Teknisi ramah dan kerja bersih."</p>
+                <div class="bg-[#111] p-5 rounded border border-white/10 relative">
+                    <i class="fa-solid fa-quote-right absolute top-4 right-4 text-gray-800 text-2xl"></i>
+                    <div class="flex text-yellow-500 text-xs mb-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-gray-400 text-sm italic mb-3">"Respon cepat jam 11 malam. Teknisi ramah dan kerja bersih."</p>
                     <div class="text-white text-xs font-bold">- Cafe Kopi, Tangerang</div>
                 </div>
             </div>
@@ -224,7 +284,7 @@
 
     <section class="py-16 bg-[#050505]">
         <div class="max-w-3xl mx-auto px-4">
-            <h2 class="text-2xl font-bold text-white text-center mb-8 brand-font">FAQ</h2>
+            <h2 class="text-2xl font-bold text-white text-center mb-8 brand-font">FAQ <span class="text-[var(--toxic-green)]">& INFO</span></h2>
             <div class="space-y-3">
                 <details>
                     <summary>Berapa biayanya?</summary>
@@ -246,7 +306,7 @@
         <div class="max-w-4xl mx-auto px-4 text-center">
             <h2 class="text-2xl font-bold text-white mb-6 brand-font">LOKASI KAMI</h2>
             <div class="h-[300px] w-full rounded-xl overflow-hidden border border-[var(--toxic-green)] shadow-[0_0_15px_rgba(57,255,20,0.2)]">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15864.716909516854!2d106.704859!3d-6.24009405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88ed343af45fc195%3A0x98e5b8eaad8e2564!2sCiledugPromo.biz.id%20%7C%20Layanan%20Bisnis%20%26%20Pemasaran!5e0!3m2!1sid!2sid!4v1768642599691!5m2!1sid!2sid" width="100%" height="100%" style="border:0; filter: invert(90%) hue-rotate(180deg);" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15864.716909516854!2d106.704859!3d-6.24009405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88ed343af45fc195%3A0x98e5b8eaad8e2564!2sCiledugPromo.biz.id%20%7C%20Layanan%20Bisnis%20%26%20Pemasaran!5e0!3m2!1sid!2sid!4v1768642599691!5m2!1sid!2sid" width="100%" height="100%" style="border:0;" class="map-dark" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
